@@ -1,3 +1,6 @@
+-- make sure that bluetooth is in the menu bar
+-- remember to change to name of your bluetooth device
+
 tell application "System Events" to tell process "SystemUIServer"
 	set bt to (first menu bar item whose description is "bluetooth") of menu bar 1
 	click bt
